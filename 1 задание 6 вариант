@@ -13,7 +13,7 @@ int main() {
     double distance = sqrt(x*x + y*y);
     
     if (distance < R1) {
-        cout << "yes" << endl;
+        cout << "no" << endl;
     }
     else if (distance == R1 || distance == R2) {
         cout << "Na granice" << endl;
@@ -22,7 +22,7 @@ int main() {
         cout << "no" << endl;
     }
     else {
-        cout << "Na granice" << endl;
+        cout << "yes" << endl;
     }
     
     return 0;
