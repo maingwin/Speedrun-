@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x, y;
+    double R1 = 15.0;
+    double R2 = 25.0;
+    
+    cout << "Введите координаты точки (x,y): ";
+    cin >> x >> y;
+    
+    double distance = sqrt(x*x + y*y);
+    
+    if (distance < R1) {
+        cout << "yes" << endl;
+    }
+    else if (distance == R1 || distance == R2) {
+        cout << "Na granice" << endl;
+    }
+    else if (distance > R2) {
+        cout << "no" << endl;
+    }
+    else {
+        cout << "Na granice" << endl;
+    }
+    
+    return 0;
+}
