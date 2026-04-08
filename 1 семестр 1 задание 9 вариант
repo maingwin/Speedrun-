@@ -5,11 +5,12 @@ using namespace std;
 
 int main() 
 {
-    float x, y;
+    float x;
     cout << "Введите значение x:" << endl;
     cin >> x;
 
-    float result = fabs pow x3 - pow x2 - 7x/pow x3 - 15x
+
+    float result = abs(pow(x, 3) - pow(x, 2) - 7 * x) / (pow(x, 3) - 15 * x);
 
     cout << "Результат = " << fixed << setprecision(4) << result << endl;
 
