@@ -1,0 +1,84 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, x, y;
+    cout << "Введите A и B: ";
+    cin >> A >> B;
+    cout << "Введите x и y (0-9): ";
+    cin >> x >> y;
+
+    if (x < 0 || x > 9 || y < 0 || y > 9) {
+        cout << "x и y должны быть от 0 до 9" << endl;
+        return 1;
+    }
+
+    int i = A;
+    while (i <= B) {
+        int last = i % 10;
+        if (last < 0) last = -last;
+        if (last == x || last == y) {
+            cout << i << " ";
+        }
+        i++;
+    }
+    cout << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, x, y;
+    cout << "Введите A и B: ";
+    cin >> A >> B;
+    cout << "Введите x и y (0-9): ";
+    cin >> x >> y;
+
+    if (x < 0 || x > 9 || y < 0 || y > 9) {
+        cout << "x и y должны быть от 0 до 9" << endl;
+        return 1;
+    }
+
+    int i = A;
+    do {
+        int last = i % 10;
+        if (last < 0) last = -last;
+        if (last == x || last == y) {
+            cout << i << " ";
+        }
+        i++;
+    } while (i <= B);
+    cout << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, x, y;
+    cout << "Введите A и B: ";
+    cin >> A >> B;
+    cout << "Введите x и y (0-9): ";
+    cin >> x >> y;
+
+    if (x < 0 || x > 9 || y < 0 || y > 9) {
+        cout << "x и y должны быть от 0 до 9" << endl;
+        return 1;
+    }
+
+    for (int i = A; i <= B; i++) {
+        int last = i % 10;
+        if (last < 0) last = -last;
+        if (last == x || last == y) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
