@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+    float x, y;
+    cout << "Введите значение x:" << endl;
+    cin >> x;
+
+    float result = fabs pow x3 - pow x2 - 7x/pow x3 - 15x
+
+    cout << "Результат = " << fixed << setprecision(4) << result << endl;
+
+    return 0;
+}
